@@ -1,6 +1,6 @@
 //
 //  NoImage/button.swift
-//  https://flatuicolors.com/
+//
 //
 //  Created by SlowWalker on 03/07/2017.
 //  Copyright © 2017 SlowWalker.me. All rights reserved.
@@ -22,10 +22,10 @@ class CloseButton: UIButton {
         let xPath = UIBezierPath()
         xPath.lineWidth = 2.0
         let offset: CGFloat = (bounds.width - circleWidth) / 2.0
-        xPath.move(to: CGPoint(x: offset + circleWidth / 4.0, y: offset + circleWidth / 4.0))
-        xPath.addLine(to: CGPoint(x: offset + 3.0 * circleWidth / 4.0, y: offset + 3.0 * circleWidth / 4.0))
-        xPath.move(to: CGPoint(x: offset + circleWidth / 4.0, y: offset + 3.0 * circleWidth / 4.0))
-        xPath.addLine(to: CGPoint(x: offset + 3.0 * circleWidth / 4.0, y: offset + circleWidth / 4.0))
+        xPath.move(to: CGPoint(x: offset + circleWidth / 3.0, y: offset + circleWidth / 3.0))
+        xPath.addLine(to: CGPoint(x: offset + 2.0 * circleWidth / 3.0, y: offset + 2.0 * circleWidth / 3.0))
+        xPath.move(to: CGPoint(x: offset + circleWidth / 3.0, y: offset + 2.0 * circleWidth / 3.0))
+        xPath.addLine(to: CGPoint(x: offset + 2.0 * circleWidth / 3.0, y: offset + circleWidth / 3.0))
         UIColor.white.setStroke()
         xPath.stroke()
     }
